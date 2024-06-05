@@ -61,7 +61,7 @@ Uo = 1.51.*LG(0,0,0) -5.06*LG(1,0,0) +7.23*LG(2,0,0) -2.04*LG(3,0,0) -3.97*LG(0,
 
 %% Hologram generation using inverse-sinc method
 ph = 0; %phase delay for phase measurements
-Uz = Uo.*exp(1i*carrier(u0,v0)).*exp(1i*ph*pi/2);
+Uz = Uo.*exp(1i*ph*pi/2);
 Uz = Uz/max(max(abs(Uz)));
 amp = abs(Uz); phi = angle(Uz);
 
